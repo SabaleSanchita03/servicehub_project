@@ -430,7 +430,7 @@ document.querySelectorAll(".pay-btn").forEach(button => {
                     order_id: data.razorpay_order_id,
                     handler: function(response) {
                         window.location.href = 
-                            "verify_payment.php?payment_id=" 
+                            "../pages/verify_payment.php?payment_id=" 
                             + response.razorpay_payment_id 
                             + "&order_id=" + orderId;
                     },
@@ -451,4 +451,5 @@ document.querySelectorAll(".pay-btn").forEach(button => {
 </script>
 
 </body>
+
 </html>
